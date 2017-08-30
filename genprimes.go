@@ -1,4 +1,4 @@
-package euler
+package main
 
 // GeneratePrimes generates prime numbers.
 func GeneratePrimes(max int) []int {

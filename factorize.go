@@ -1,4 +1,4 @@
-package euler
+package main
 
 // FactorizationEntry Factorization entry.
 type FactorizationEntry struct {
@@ -20,7 +20,12 @@ func Factorize(n int, primes []int) []FactorizationEntry {
 				resultIndex++
 			}
 		} else {
-			primeIndex++
+			if primes[primeIndex]*primes[primeIndex] > n {
+				result = append(result, FactorizationEntry{n, 1})
+				break
+			} else {
+				primeIndex++
+			}
 		}
 	}
 	return result

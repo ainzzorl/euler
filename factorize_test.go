@@ -1,4 +1,4 @@
-package euler
+package main
 
 import (
 	"reflect"
