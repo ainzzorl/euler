@@ -3,10 +3,6 @@ package main
 // https://projecteuler.net/problem=090
 // Cube digit pairs
 
-import (
-	"fmt"
-)
-
 func p090() int {
 	result := 0
 	total := 0
@@ -85,6 +81,6 @@ func isValid(digits1 []int, digits2 []int) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(p090())
-}
+// func main() {
+// 	fmt.Println(p090())
+// }
